@@ -1,21 +1,61 @@
-<h1>Abstract</h1>
-This project presents a comprehensive football player market value prediction system, leveraging 
-structured performance, injury, and market data along with unstructured social media sentiment to 
-produce accurate, data-driven valuations. Data sources included StatsBomb Open Data for granular 
-match events, Transfermarkt for player transfer and market valuations, and Twitter API for public 
-sentiment analysis. Python was the core programming language, with Pandas and NumPy employed 
-for data processing, scikit-learn for preprocessing and scaling, and NLTK/TextBlob for sentiment 
-analysis. 
-The project followed a systematic data engineering pipeline, starting with data collection, cleaning, 
-preprocessing, and feature engineering across four key domains: performance, injury, market, and 
-sentiment. Sequential and non-sequential features were integrated into a unified dataset, standardized 
-and imputed for completeness. Machine learning models included a Multivariate LSTM to capture 
-temporal dependencies in player performance and an XGBoost Regressor as a non-sequential 
-benchmark. Hyperparameter optimization was performed using KerasTuner and 
-RandomizedSearchCV, resulting in an optimized ensemble model combining both approaches. 
-Final model evaluation demonstrated a stable predictive framework, achieving a normalized RMSE of 
-0.3334 and MAE of 1.74. Model persistence and deployment were handled using Joblib, with 
-production-ready scripts and a Streamlit-based dashboard, TransferIQ, enabling interactive, real-time 
-player market value predictions. This project demonstrates the effective fusion of multi-domain 
-structured data, deep learning, ensemble methods, and sentiment analysis into a practical tool for 
-football analytics, recruitment, and market evaluation.
+<h1>⚽ Football Player Market Value Prediction</h1>
+<h2>📄 Abstract</h2>
+
+This project develops a football player market value prediction system using structured data (performance, injury, market) and unstructured social media sentiment 💬. Data were collected from StatsBomb ⚽, Transfermarkt , and the Twitter API .
+
+Built with Python , the system employs Pandas and NumPy for data processing, scikit-learn for preprocessing, and NLTK/TextBlob for sentiment analysis. The pipeline includes data collection, cleaning, feature engineering, and integration across key domains — performance, injury, market, and sentiment.
+
+Two machine learning models were implemented:
+
+🧠 Multivariate LSTM for capturing temporal dependencies
+
+⚙️ XGBoost Regressor for non-sequential prediction
+
+An optimized ensemble model combining both approaches achieved a normalized RMSE of 0.3334 and MAE of 1.74 📊.
+
+Deployment was carried out using Joblib, with a Streamlit dashboard — TransferIQ 💻 providing real-time, interactive player valuation.
+
+This project demonstrates the integration of data science, deep learning, and sentiment analytics to deliver actionable insights for football analytics, recruitment, and market evaluation 📈.
+
+<h1>🧰 Tech Stack & Tools</h1>
+<h2>🐍 Programming & Libraries</h2>
+
+Python — Core language for data analysis and modeling
+
+Pandas 📊 — Data manipulation and cleaning
+
+NumPy 🔢 — Numerical computing and matrix operations
+
+scikit-learn 🤖 — Preprocessing, feature scaling, and model evaluation
+
+NLTK / TextBlob 💬 — Sentiment analysis from social media text
+
+<h2>🧠 Machine Learning & Deep Learning</h2>
+
+LSTM (Keras / TensorFlow) — Sequential model for performance time series
+
+XGBoost ⚙️ — Gradient boosting for non-sequential regression
+
+KerasTuner / RandomizedSearchCV 🎯 — Hyperparameter tuning
+
+<h2>💾 Data Sources</h2>
+
+StatsBomb Open Data ⚽ — Match event and player performance data
+
+Transfermarkt 💸 — Player market and transfer valuations
+
+Twitter API 🐦 — Social sentiment extraction
+
+<h2>🚀 Deployment & Visualization</h2>
+
+Joblib 🗂️ — Model persistence and storage
+
+Streamlit 💻 — Interactive dashboard (TransferIQ) for real-time predictions
+
+🧩 Development Tools
+
+Jupyter Notebook 📓 — Prototyping and analysis
+
+VS Code 🧑‍💻 — Project development environment
+
+Git & GitHub 🌐 — Version control and project management
